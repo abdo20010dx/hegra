@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+		    <meta charset="utf-8" />
+	<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+        <title>immigration countries</title>
+        <link rel="stylesheet" type="text/css" href="../index.css">
+		<style>
+		</style>
+    </head>
+    <body>
+        
+
+      <img class="loading" src="../hegra-open.png">
+
+		<div>
+   <form id="1" class="quesappear">
+       <p>please select your language</p>
+       <input type="radio" id="arabic" name="lang">
+       <label for="arabic" >عربى</label><br>
+       <input type="radio" id="english" name="lang">
+       <label for="english">English</label>
+   </form>         
+   <form id="2" class="">
+       <p>please select your social status</p>
+       <input type="radio" id="single" name="status" value="1">
+       <label for="single">single</label><br>
+       <input type="radio" id="married" name="status" value="2">
+       <label for="married">married</label>
+   </form>
+   <form id="3" class="" >
+       <p>please choose your partner's situation</p>
+       <input type="radio" id="come" name="situation" value="1">
+       <label for="come">partner will come with me</label><br>
+       <input type="radio" id="notcome" name="situation" value="2">
+       <label for="notcome">partner will not come with me</label><br>
+       <input type="radio" id="resident" name="situation" value="3">
+       <label for="resident">partner is resident or candian</label>
+   </form>
+  <form id="4" class="">
+  <p>Please select your birth date:</p>
+  <input type="date" id="date" name="date"  >
+  </form>
+<form id="5" class="" title="c">
+    <p>Please select your education degree:</p>
+<input type="radio" id="lesshigh" name="education" value="1">
+<label for="lesshigh">Less than secondary school (high school)</label><br>
+<input type="radio" id="highschool" name="education" value="2">
+<label for="highschool">Secondary diploma (high school graduation)</label><br>
+<input type="radio" id="one-year" name="education" value="3">
+<label for="one-year">One-year degree, diploma or certificate from a university or other institute</label><br>
+<input type="radio" id="two-year" name="education" value="4">
+<label for="two-year">two-year degree, diploma or certificate from a university or other institute</label><br>
+<input type="radio" id="bachelor" name="education" value="5">
+<label for="bachelor">Bachelor's degree OR a three or more year program at a university or other institute</label><br>
+<input type="radio" id="two-diploma" name="education" value="6">
+<label for="two-diploma">Two or more certificates, diplomas,One must be for a program of three or more years</label><br>
+<input type="radio" id="profes" name="education" value="7">
+<label for="profes">Master's degree, OR professional degree needed to practice in a licensed profession</label><br>
+<input type="radio" id="doctorate" name="education" value="8">
+<label for="doctorate">Doctoral level university degree (Ph.D.)</label><br>
+</form>
+
+<form id="6" class="" title="c">
+    <p class="firstlang">Official languages proficiency-first official language,<br>
+        (reading, writing, speaking and listening)<br>
+        Canadian Language Benchmark (CLB) level per ability:
+    </p>
+    <div>
+        <p>reading ability</p>
+        <div id="reading">
+            <input type="radio" id="LESSCLB4reading" name="reading" value="1">
+        <label for="LESSCLB4reading">Less than CLB 4</label><br>
+        <input type="radio" id="CLB4OR5reading" name="reading" value="2">
+        <label for="CLB4OR5reading">CLB 4</label><br>
+        <input type="radio" id="CLB5reading" name="reading" value="3">
+        <label for="CLB5reading">CLB 5</label><br>
+        <input type="radio" id="CLB6reading" name="reading" value="4">
+        <label for="CLB6reading">CLB 6</label><br>
+        <input type="radio" id="CLB7reading" name="reading" value="5">
+        <label for="CLB7reading">CLB 7</label><br>
+        <input type="radio" id="CLB8reading" name="reading" value="6">
+        <label for="CLB8reading">CLB 8</label><br>
+        <input type="radio" id="CLB9reading" name="reading" value="7">
+        <label for="CLB9reading">CLB 9</label><br>
+        <input type="radio" id="MORECLB10reading" name="reading" value="8">
+        <label for="MORECLB10reading">CLB 10 or more</label>
+    </div>
+</div>
+<div>
+    <p>writing ability</p>
+    <div id="writing">
+        <input type="radio" id="LESSCLB4writing" name="writing" value="1">
+            <label for="LESSCLB4writing">Less than CLB 4	</label><br>
+            <input type="radio" id="CLB4OR5writing" name="writing" value="2">
+            <label for="CLB4OR5writing">CLB 4</label><br>
+            <input type="radio" id="CLB5writing" name="writing" value="3">
+            <label for="CLB5writing">CLB 5</label><br>
+            <input type="radio" id="CLB6writing" name="writing" value="4">
+            <label for="CLB6writing"writing>CLB 6</label><br>
+            <input type="radio" id="CLB7writing" name="writing" value="5">
+            <label for="CLB7writing">CLB 7</label><br>
+            <input type="radio" id="CLB8writing" name="writing" value="6">
+            <label for="CLB8writing">CLB 8</label><br>
+            <input type="radio" id="CLB9writing" name="writing" value="7">
+            <label for="CLB9writing">CLB 9</label><br>
+            <input type="radio" id="MORECLB10writing" name="writing" value="8">
+            <label for="MORECLB10writing">CLB 10 or more</label>
+        </div>
+    </div>
+    <div>
+        <p>speaking ability</p>
+        <div id="speaking">
+            <input type="radio" id="LESSCLB4speaking" name="speaking" value="1">
+                <label for="LESSCLB4speaking">Less than CLB 4	</label><br>
+                <input type="radio" id="CLB4OR5speaking" name="speaking" value="2">
+                <label for="CLB4OR5speaking">CLB 4</label><br>
+                <input type="radio" id="CLB5speaking" name="speaking" value="3">
+                <label for="CLB5speaking">CLB 5</label><br>
+                <input type="radio" id="CLB6speaking" name="speaking" value="4">
+                <label for="CLB6speaking">CLB 6</label><br>
+                <input type="radio" id="CLB7speaking" name="speaking" value="5">
+                <label for="CLB7speaking">CLB 7</label><br>
+                <input type="radio" id="CLB8speaking" name="speaking" value="6">
+                <label for="CLB8speaking">CLB 8</label><br>
+                <input type="radio" id="CLB9speaking" name="speaking" value="7">
+                <label for="CLB9speaking">CLB 9</label><br>
+                <input type="radio" id="MORECLB10speaking" name="speaking" value="8">
+                <label for="MORECLB10speaking">CLB 10 or more</label>
+            </div>
+        </div>
+        <div>
+            <p>listeninig ability</p>
+            <div id="listening">
+                <input type="radio" id="LESSCLB4listening" name="listening" value="1">
+                    <label for="LESSCLB4listening">Less than CLB 4	</label><br>
+                    <input type="radio" id="CLB4OR5listening" name="listening" value="2">
+                    <label for="CLB4OR5listening">CLB 4</label><br>
+                    <input type="radio" id="CLB5listening" name="listening" value="3">
+                    <label for="CLB5listening">CLB 5</label><br>
+                    <input type="radio" id="CLB6listening" name="listening" value="4">
+                    <label for="CLB6listening">CLB 6</label><br>
+                    <input type="radio" id="CLB7listening" name="listening" value="5">
+                    <label for="CLB7listening">CLB 7</label><br>
+                    <input type="radio" id="CLB8listening" name="listening" value="6">
+                    <label for="CLB8listening">CLB 8</label><br>
+                    <input type="radio" id="CLB9listening" name="listening" value="7">
+                    <label for="CLB9listening">CLB 9</label><br>
+                    <input type="radio" id="MORECLB10listening" name="listening" value="8">
+                    <label for="MORECLB10listening">CLB 10 or more</label>
+                </div>
+            </div>
+        </form>
+        <form id="7" class="" title="c">
+            <p>Official languages proficiency-second official language,<br>
+                (reading, writing, speaking and listening)<br>
+                Canadian Language Benchmark (CLB) level per ability:
+            </p>
+            <div>
+                <p>reading ability</p>
+                <div id="reading1">
+                    <input type="radio" id="LESSCLB4reading1" name="reading1" value="1">
+                <label for="LESSCLB4reading1">CLB 4 or less</label><br>
+                <input type="radio" id="CLB4OR5reading1" name="reading1" value="2">
+                <label for="CLB4OR5reading1">CLB 5 or 6</label><br>
+                <input type="radio" id="CLB6reading1" name="reading1" value="3">
+                <label for="CLB6reading1">CLB 7 or 8</label><br>
+                <input type="radio" id="CLB7reading1" name="reading1" value="4">
+                <label for="CLB7reading1">CLB 9 or more</label><br>
+            </div>
+        </div>
+        <div>
+            <p>writing ability</p>
+            <div id="writing1">
+                <input type="radio" id="LESSCLB4writing1" name="writing1" value="1">
+                    <label for="LESSCLB4writing1">CLB 4 or less</label><br>
+                    <input type="radio" id="CLB4OR5writing1" name="writing1" value="2">
+                    <label for="CLB4OR5writing1">CLB 5 or 6</label><br>
+                    <input type="radio" id="CLB6writing1" name="writing1" value="3">
+                    <label for="CLB6writing1"writing>CLB 7 or 8</label><br>
+                    <input type="radio" id="CLB7writing1" name="writing1" value="4">
+                    <label for="CLB7writing1">CLB 9 or more</label><br>
+                </div>
+            </div>
+            <div>
+                <p>speaking ability</p>
+                <div id="speaking1">
+                    <input type="radio" id="LESSCLB4speaking1" name="speaking1" value="1">
+                        <label for="LESSCLB4speaking1">CLB 4 or less</label><br>
+                        <input type="radio" id="CLB4OR5speaking1" name="speaking1" value="2">
+                        <label for="CLB4OR5speaking1">CLB 5 or 6</label><br>
+                        <input type="radio" id="CLB6speaking1" name="speaking1" value="3">
+                        <label for="CLB6speaking1">CLB 7 or 8</label><br>
+                        <input type="radio" id="CLB7speaking1" name="speaking1" value="4">
+                        <label for="CLB7speaking1">CLB 9 or more</label><br>
+                    </div>
+                </div>
+                <div>
+                    <p>listeninig ability</p>
+                    <div id="listening1">
+                        <input type="radio" id="LESSCLB4listening1" name="listening1" value="1">
+                            <label for="LESSCLB4listening1">CLB 4 or less</label><br>
+                            <input type="radio" id="CLB4OR5listening1" name="listening1" value="2">
+                            <label for="CLB4OR5listening1">CLB 5 or 6</label><br>
+                            <input type="radio" id="CLB6listening1" name="listening1" value="3">
+                            <label for="CLB6listening1">CLB 7 or 8</label><br>
+                            <input type="radio" id="CLB7listening1" name="listening1" value="4">
+                            <label for="CLB7listening1">CLB 9 or more</label><br>
+                        </div>
+                    </div>
+                </form>
+        <form id="8" class="">
+    <P>Canadian work experience</P>
+    <input type="radio" id="noneyear" name="experience" value="1">
+    <label for="noneyear">None or less than a year</label><br>
+    <input type="radio" id="1year" name="experience" value="2">
+    <label for="1year">1 year</label><br>
+    <input type="radio" id="2year" name="experience" value="3">
+    <label for="2year">2 years</label><br>
+    <input type="radio" id="3year" name="experience" value="4">
+    <label for="3year">3 years</label><br>
+    <input type="radio" id="4year" name="experience" value="5">
+    <label for="4year">4 years</label><br>
+    <input type="radio" id="more5years" name="experience" value="6">
+    <label for="more5years">5 years or more</label><br>
+</form>
+<form id="9" class="" title="d">
+    <p>Foreign work experience</p>
+    <input type="radio" id="no-foreign" name="foreignwork" value="1">
+    <label for="no-foreign">No foreign work experience</label><br>
+    <input type="radio" id="2foreign" name="foreignwork" value="2">
+    <label for="2foreign">1 or 2 years of foreign work experience</label><br>
+    <input type="radio" name="foreignwork" id="3foreign" value="3">
+    <label for="3foreign">3 years or more of foreign work experience</label><br>
+</form>
+<form id="10" class="" title="d">
+    <p>Certificate of qualification(for trade occupations)</p>
+    <input type="radio" id="no-cert" name="tradeoccu" value="1">
+    <label for="no-cert">Without a certificate of qualification</label><br>
+    <input type="radio" id="certificate" name="tradeoccu" value="2">
+    <label for="certificate">With a certificate of qualification</label><br>
+</form>
+<form id="11" class="" title="c">
+    <p>Additional points</p>
+    <input type="checkbox" id="broresident" name="addpts" value="15">
+    <label for="broresident">Brother or sister living in Canada <br> who is a citizen or permanent resident of Canada</label><br>
+    <input type="checkbox" id="scored-lower" name="addpts" value="15">
+    <label for="scored-lower">Scored NCLC 7 or higher on all four French language skills and<br>scored CLB 4 or lower in English (or didn’t take an English test)</label><br>
+    <input type="checkbox" id="scored-higher" name="addpts" value="30">
+    <label for="scored-higher">Scored NCLC 7 or higher on all four French language skills and<br> scored CLB 5 or higher on all four English skills</label><br>
+    <input type="checkbox" id="credential-two" name="addpts" value="15">
+    <label for="credential-two">Post-secondary education in  Canada - credential of one or two years</label><br>
+    <input type="checkbox" id="credential-more" name="addpts" value="30">
+    <label for="credential-more">Post-secondary education in  Canada - credential three years or longer</label><br>
+    <input type="checkbox" id="noc00" name="addpts" value="200">
+    <label for="noc00">Arranged employment - NOC 00</label><br>
+    <input type="checkbox" id="other-less-noc00" name="addpts" value="50">
+    <label for="other-less-noc00">Arranged employment – any other NOC 0, A or B</label><br>
+    <input type="checkbox" id="nomination" name="addpts" value="600">
+    <label for="nomination">Provincial or territorial nomination</label>
+
+</form>
+<!--the forms of partner begin from here -->
+<form id="12" class="" title="c">
+    <p>Please select your partner education degree:</p>
+<input type="radio" id="lesshigh2" name="education2" value="0">
+<label for="lesshigh2">Less than secondary school (high school)</label><br>
+<input type="radio" id="highschool2" name="education2" value="2">
+<label for="highschool2">Secondary diploma (high school graduation)</label><br>
+<input type="radio" id="one-year2" name="education2" value="6">
+<label for="one-year2">One-year degree, diploma or certificate from a university or other institute</label><br>
+<input type="radio" id="two-year2" name="education2" value="7">
+<label for="two-year2">two-year degree, diploma or certificate from a university or other institute</label><br>
+<input type="radio" id="bachelor2" name="education2" value="8">
+<label for="bachelor2">Bachelor's degree OR a three or more year program at a university or other institute</label><br>
+<input type="radio" id="two-diploma2" name="education2" value="9">
+<label for="two-diploma2">Two or more certificates, diplomas,One must be for a program of three or more years</label><br>
+<input type="radio" id="profes2" name="education2" value="10">
+<label for="profes2">Master's degree, OR professional degree needed to practice in a licensed profession</label><br>
+<input type="radio" id="doctorate2" name="education2" value="10">
+<label for="doctorate2">Doctoral level university degree (Ph.D.)</label><br>
+</form>
+</form>
+<form id="13" class="" title="c">
+    <p>Partner's Official languages proficiency-first official language,<br>
+        (reading, writing, speaking and listening)<br>
+        Canadian Language Benchmark (CLB) level per ability:
+    </p>
+    <div>
+        <p>reading ability</p>
+        <div id="readingpartner">
+            <input type="radio" id="LESSCLB4readingpartner" name="readingpartner" value="0">
+        <label for="LESSCLB4readingpartner">CLB 4 or less</label><br>
+        <input type="radio" id="CLB4OR5readingpartner" name="readingpartner" value="1">
+        <label for="CLB4OR5readingpartner">CLB 5 or 6</label><br>
+        <input type="radio" id="CLB6readingpartner" name="readingpartner" value="3">
+        <label for="CLB6readingpartner">CLB 7 or 8</label><br>
+        <input type="radio" id="CLB7readingpartner" name="readingpartner" value="5">
+        <label for="CLB7readingpartner">CLB 9 or more</label><br>
+    </div>
+</div>
+<div>
+    <p>writing ability</p>
+    <div id="writingpartner">
+        <input type="radio" id="LESSCLB4writingpartner" name="writingpartner" value="0">
+            <label for="LESSCLB4writingpartner">CLB 4 or less</label><br>
+            <input type="radio" id="CLB4OR5writingpartner" name="writingpartner" value="1">
+            <label for="CLB4OR5writingpartner">CLB 5 or 6</label><br>
+            <input type="radio" id="CLB6writingpartner" name="writingpartner" value="3">
+            <label for="CLB6writingpartner"writing>CLB 7 or 8</label><br>
+            <input type="radio" id="CLB7writingpartner" name="writingpartner" value="5">
+            <label for="CLB7writingpartner">CLB 9 or more</label><br>
+        </div>
+    </div>
+    <div>
+        <p>speaking ability</p>
+        <div id="speakingpartner">
+            <input type="radio" id="LESSCLB4speakingpartner" name="speakingpartner" value="0">
+                <label for="LESSCLB4speakingpartner">CLB 4 or less</label><br>
+                <input type="radio" id="CLB4OR5speakingpartner" name="speakingpartner" value="1">
+                <label for="CLB4OR5speakingpartner">CLB 5 or 6</label><br>
+                <input type="radio" id="CLB6speakingpartner" name="speakingpartner" value="3">
+                <label for="CLB6speakingpartner">CLB 7 or 8</label><br>
+                <input type="radio" id="CLB7speakingpartner" name="speakingpartner" value="5">
+                <label for="CLB7speakingpartner">CLB 9 or more</label><br>
+            </div>
+        </div>
+        <div>
+            <p>listeninig ability</p>
+            <div id="listeningpartner">
+                <input type="radio" id="LESSCLB4listeningpartner" name="listeningpartner" value="0">
+                    <label for="LESSCLB4listeningpartner">CLB 4 or less</label><br>
+                    <input type="radio" id="CLB4OR5listeningpartner" name="listeningpartner" value="1">
+                    <label for="CLB4OR5listeningpartner">CLB 5 or 6</label><br>
+                    <input type="radio" id="CLB6listeningpartner" name="listeningpartner" value="3">
+                    <label for="CLB6listeningpartner">CLB 7 or 8</label><br>
+                    <input type="radio" id="CLB7listeningpartner" name="listeningpartner" value="5">
+                    <label for="CLB7listeningpartner">CLB 9 or more</label><br>
+                </div>
+            </div>
+        </form>
+<form id="14" class="">
+    <P>Partner's Canadian work experience</P>
+    <input type="radio" id="noneyear2" name="experience2" value="0">
+    <label for="noneyear2">None or less than a year</label><br>
+    <input type="radio" id="1year2" name="experience2" value="5">
+    <label for="1year2">1 year</label><br>
+    <input type="radio" id="2year2" name="experience2" value="7">
+    <label for="2year2">2 years</label><br>
+    <input type="radio" id="3year2" name="experience2" value="8">
+    <label for="3year2">3 years</label><br>
+    <input type="radio" id="4year2" name="experience2" value="9">
+    <label for="4year2">4 years</label><br>
+    <input type="radio" id="more5years2" name="experience2" value="10">
+    <label for="more5years2">5 years or more</label><br>
+</form>
+
+
+
+<form id="15" class="calc">
+  <input type="button" id="calculate" value="your score"><br>
+		<div id="score"></div>
+    </div>
+</form>
+		
+ <div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰☰☰☰</a>
+  <a href="../index.html">Home Page</a>
+  <a href="../index1.html">الهجرة لكندا</a>
+  <a href="../index2.html">الهجرة لنيوزيلندا</a>
+  <a href="../index3.html">الهجرة لاستراليا</a>
+  <a href="../index4.html">About</a>
+  <a href="">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<button id="next" >&#10095;</button>
+<button id="prev" >&#10094;</button>
+<button class="openbtn" onclick="openNav()">☰</button>  
+<div class="footer">
+  <p>© all rights reserved by afaak</p>
+</div>
+
+ 
+		    <script type="text/javascript" src="cordova.js"></script>
+		<script src="phonegap.js"></script>
+		<script type="text/javascript" src="canada.js">
+		</script>
+    </body>
+</html>
