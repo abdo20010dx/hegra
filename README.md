@@ -1,2 +1,2 @@
 # afaak
-this repository of team
+hello everyone this repository of our project , i will give you my notes here
