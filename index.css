@@ -185,7 +185,10 @@ input[type="radio"]:checked + label {
       position: absolute;
       visibility: hidden;
       transition: transform 1s;
-      transform: translateX(50%);
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
       max-width: 300px;
   }
   #next{
@@ -209,6 +212,10 @@ input[type="radio"]:checked + label {
   visibility: visible;
   opacity: 1;
   transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+
 
   }
   button:active{
@@ -331,7 +338,7 @@ input[type="radio"]:checked + label {
         left: 0px;
         top: 0px;
         width: 350px;
-        height: 600px;
+        height: 100%;
         background-color: white;
         -webkit-animation: disapp 3.3s;
         -moz-animation: disapp 3.3s;
