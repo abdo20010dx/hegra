@@ -138,6 +138,7 @@ background-color:#444;
 position: absolute;
 width:100%;
 bottom: 0px;
+left: 0px;
 background-color:black;
 color: white;
 text-decoration: underline;
@@ -179,11 +180,12 @@ input[type="radio"]:checked + label {
 
   form{
       top: 50px;
-      left: 50px;
+      left: 40px;
       position: absolute;
       visibility: hidden;
       transition: transform 1s;
       transform: translateX(50%);
+      max-width: 300px;
   }
   #next{
       position: absolute;
@@ -219,19 +221,26 @@ input[type="radio"]:checked + label {
     [title=c] label{
         top: 0px;
         left: 0px;
-        font-size: 10px;
+        font-size: 15px;
         margin-left: 0px;
         margin-right: 0px;
+        max-width: 300px;
+        margin: 0;
 
         
     }
     [title=c]{
-        top: 40px;
+        top: 50px;
         left: 0px;
         
     }
     [title=c] p{
-        font-size: 15px;
+        font-size: 17px;
+        margin: 0px;
+    margin-bottom: 2px;
+    }
+    [title=c] p:hover{
+        color: red;
     }
     [title=b]{
         top: 0px;
@@ -240,7 +249,8 @@ input[type="radio"]:checked + label {
     }
     [title=d]{
         top: 100px;
-        left: 10px;
+        left: 0px;
+        max-width: 300px;
         
     }
     input[type='date']{
@@ -248,7 +258,7 @@ input[type="radio"]:checked + label {
         box-shadow: black 0px 0px 15px 3px;
     }
     form div{
-        display: inline-block;
+        display: block;
         margin-right: 10px;
     }
     p{
@@ -357,5 +367,11 @@ input[type="radio"]:checked + label {
         position: absolute;
         left: 0px;
         bottom: 80px;
+    }
+    .down{
+        display: none;
+    }
+    .up{
+        display: block;
     }
 
