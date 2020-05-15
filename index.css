@@ -125,10 +125,11 @@ top: 0px;
 left: 0px;
 font-size: 20px;
 cursor: pointer;
-background-color: #111;
+background-color: black;
 color: white;
 padding: 10px 15px;
 border: none;
+opacity: 70%;
 }
 
 .openbtn:hover {
@@ -215,7 +216,8 @@ input[type="radio"]:checked + label {
     }
     #score{
     color: #009b74;
-    font-size: 50px;
+    font-size: 40px;
+    min-width: 280px;
     margin-right: 50%;
     }
     [title=c] label{
@@ -230,17 +232,14 @@ input[type="radio"]:checked + label {
         
     }
     [title=c]{
-        top: 50px;
-        left: 0px;
+        top: 0px;
+        left: 20px;
         
     }
     [title=c] p{
         font-size: 17px;
         margin: 0px;
     margin-bottom: 2px;
-    }
-    [title=c] p:hover{
-        color: red;
     }
     [title=b]{
         top: 0px;
@@ -249,8 +248,8 @@ input[type="radio"]:checked + label {
     }
     [title=d]{
         top: 100px;
-        left: 0px;
-        max-width: 300px;
+        left: 20px;
+        max-width: 280px;
         
     }
     input[type='date']{
@@ -373,5 +372,8 @@ input[type="radio"]:checked + label {
     }
     .up{
         display: block;
+    }
+    .ability1:hover,.ability2:hover{
+        color: red;
     }
 
