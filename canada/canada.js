@@ -22,11 +22,16 @@ function openNav() {
                 let writing=document.getElementsByName("writing");
                 let speaking=document.getElementsByName("speaking");
                 let listening=document.getElementsByName("listening");
+                let ability1=document.getElementsByClassName("ability1");
+                let down=document.getElementsByName("down");                
                 //the following variables used for clb(second language)
                 let reading1=document.getElementsByName("reading1");
                 let writing1=document.getElementsByName("writing1");
                 let speaking1=document.getElementsByName("speaking1");
                 let listening1=document.getElementsByName("listening1");
+                let ability2=document.getElementsByClassName("ability2");
+                let down1=document.getElementsByName("down1");                
+
                 //partner variables
                              //partner language
                 let readingpartner=document.getElementsByName("readingpartner");
@@ -436,7 +441,40 @@ function openNav() {
         ques.className="quesappear";//class visible
 
     }
-    
+
+
+
+
+    //لو هغير اسم الكلاس مينفعش استدعيه بالكلاس note
+    //this loop i made for appear the ability of first language
+    for(let i=0;i<ability1.length;i++){
+        ability1[i].onclick=function(){
+            for(let j=0;j<ability1.length;j++){
+                //this loop i made to disappear the rest of other ability
+            down[j].className="down";
+        }
+        down[i].className="up";
+            }
+        }
+
+    //لو هغير اسم الكلاس مينفعش استدعيه بالكلاس note
+    //this loop i made for appear the ability of second language
+    for(let i=0;i<ability2.length;i++){
+        ability2[i].onclick=function(){
+            for(let j=0;j<ability2.length;j++){
+                //this loop i made to disappear the rest of other ability
+            down1[j].className="down";
+        }
+        down1[i].className="up";
+            }
+        }
+        
+
+
+
+
+
+
     
     next.addEventListener('click',next1);
     prev.addEventListener('click',prev1);
