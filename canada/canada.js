@@ -42,6 +42,10 @@ function openNav() {
                 let education2=document.getElementsByName("education2");
                        //partner canadian work experience
                 let experience2=document.getElementsByName("experience2");
+                let ability3=document.getElementsByClassName("ability3");
+                let down2=document.getElementsByName("down2");                
+
+
 
 
 
@@ -466,6 +470,17 @@ function openNav() {
             down1[j].className="down";
         }
         down1[i].className="up";
+            }
+        }
+    //لو هغير اسم الكلاس مينفعش استدعيه بالكلاس note
+    //this loop i made for appear the ability of partner first language
+    for(let i=0;i<ability3.length;i++){
+        ability3[i].onclick=function(){
+            for(let j=0;j<ability3.length;j++){
+                //this loop i made to disappear the rest of other ability
+            down2[j].className="down";
+        }
+        down2[i].className="up";
             }
         }
         
