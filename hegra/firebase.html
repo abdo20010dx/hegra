@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hegra log in</title>
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    
+</head>
+<body>
+  <form>
+    <h2>Fill The Form</h2>
+    <input type="email" id="email" placeholder="name@email.com"><br>
+    <input type="password" id="password" placeholder="************"><br>
+    <input type="text" id="userName" placeholder="name"><br>
+    <label for="lawer">محامى</label>
+    <input name="work" type="radio" id="lawer" value="المحامى"><br>
+    <label for="immig">مهاجر</label>
+    <input name="work" type="radio" id="immig" value="المهاجر"><br>
+    <button type="button" onclick="createEmail();" id="signupbutton" >sign up</button>
+    <button type="button" onclick="authEmail(); savepage();" id="signinbutton" >sign in</button>
+    <div id="messerr"></div>
+  </form>
+  
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+
+<script type="text/javascript">
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAZRo9RVQP0YMeqBAJksLLXlfgRlOWpOuU",
+    authDomain: "hegra-14710.firebaseapp.com",
+    databaseURL: "https://hegra-14710.firebaseio.com",
+    projectId: "hegra-14710",
+    storageBucket: "hegra-14710.appspot.com",
+    messagingSenderId: "495129818832",
+    appId: "1:495129818832:web:50adaf4b385276f7e490d5",
+    measurementId: "G-F1FJSPK3W4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script type="text/javascript" src="./database.firebase.js"></script>
+<script type="text/javascript">
+window.localStorage.setItem('z',window.location.href);
+
+</script>
+
+</body>
+</html>

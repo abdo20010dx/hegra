@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+
+</head>
+<body>
+    <div class="contain">
+    <div id="chat">
+    </div>
+    <input type="text" id="messages" placeholder="Type Text..."><br>
+    <button id="msbtn" onclick="saveMessage(); cleartext(); updateScroll();">send</button>
+    </div>
+
+
+    <img class="loading" src="hegra-open.png">
+     <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰☰☰☰</a>
+      <a href="index.html">Home Page</a>
+      <a href="index1.html">الهجرة لكندا</a>
+      <a href="index2.html">الهجرة لنيوزيلندا</a>
+      <a href="index3.html">الهجرة لاستراليا</a>
+      <a href="index4.html">About</a>
+      <a href="">Services</a>
+      <a href="#" onclick="signOut();">log out</a>
+      <a href="chat.html">chat</a>
+    </div>
+    
+    
+    <button class="openbtn" onclick="openNav()">☰</button>  
+    
+     
+    <script type="text/javascript">
+    
+                
+    
+                
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    
+    //this method for page load
+    setTimeout(() => {
+        document.getElementsByClassName("loading")[0].className="stopload";
+    
+    }, 3000);
+    
+        </script>
+    
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAZRo9RVQP0YMeqBAJksLLXlfgRlOWpOuU",
+    authDomain: "hegra-14710.firebaseapp.com",
+    databaseURL: "https://hegra-14710.firebaseio.com",
+    projectId: "hegra-14710",
+    storageBucket: "hegra-14710.appspot.com",
+    messagingSenderId: "495129818832",
+    appId: "1:495129818832:web:50adaf4b385276f7e490d5",
+    measurementId: "G-F1FJSPK3W4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+</script>
+<script type="text/javascript" src="./database.firebase.js"></script>
+
+</body>
+</html>
