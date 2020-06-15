@@ -370,7 +370,13 @@ function openNav() {
                 if(isNaN(mysum)){
                    score.textContent="please mark on all answers to get your score";
                    }else{
-                score.textContent="Dear Candidate your Score is: "+mysum;
+                       if(mysum >= '440'){
+                        score.style.color="green";
+                score.textContent="Success :) Dear Candidate your Score is: "+mysum;
+                       }else if(mysum < '440'){
+                           score.style.color="red";
+                        score.textContent="failed :( Dear Candidate your Score less than Minimum : "+mysum;
+                       }
                    }
             }
             
