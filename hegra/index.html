@@ -77,6 +77,9 @@
 <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
 
 <script>
+  //if browser offline stop
+ if(navigator.onLine==false){window.stop()}
+
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyAZRo9RVQP0YMeqBAJksLLXlfgRlOWpOuU",

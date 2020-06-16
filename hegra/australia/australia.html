@@ -65,6 +65,48 @@ setTimeout(() => {
     document.getElementsByClassName("loading")[0].className="stopload";
 
 }, 2000);
+
+
+
+
+
+//check if connection exist
+function doesConnectionExist() {
+    var xhr = new XMLHttpRequest();
+    var file = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations/results-previous.html?fbclid=IwAR3zQtV6o2VCzBqv_sraNPxs7q-m4QqVbb8ZsDDZ7YBlRLql6emjte04P04";
+    var randomNum = Math.round(Math.random() * 10000);
+ 
+    xhr.open('HEAD', file + "?rand=" + randomNum, true);
+    xhr.send();
+     
+    xhr.addEventListener("readystatechange", processRequest, false);
+ 
+    function processRequest(e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status >= 200 && xhr.status < 304) {
+          // setTimeout(window.open("https://www.seekvisa.com.au/instant-points-test-calculator/?fbclid=IwAR3VjK3opc5hh3MR3HnIe6P3i_rTihzIIaQxK2DVlh1e7GYxXF3VRUm9KSA",'_self'),2000);
+        } else {
+          let refrButton=document.createElement('button');
+          let spanMess=document.createElement('div');
+          refrButton.className='refrButton';
+          refrButton.textContent="Refresh";
+          spanMess.textContent="Bad Connection :(";
+          spanMess.className="NoConnectMessage";
+          document.body.appendChild(spanMess);
+          document.body.appendChild(refrButton);
+          refrButton.onclick=()=>{setTimeout(()=>location.reload(),1000);
+            refrButton.style.transform="rotateZ(360deg)";
+            refrButton.style.transition="1s";             
+            }
+          if(navigator.onLine==false){window.stop()}
+        }
+      }
+    }
+}
+
+//here i run the method of connection checking
+doesConnectionExist();
+
     </script>
     
 
