@@ -6,6 +6,14 @@ let userName=document.querySelector('#userName');
 let chat=document.querySelector('#chat');
 const db=firebase.firestore();
 
+
+//here i get last draw of canada immigration
+let lastdraw = firebase.database().ref('canada');
+lastdraw.on('value', function(snapshot) {
+  window.localStorage.setItem("drawvalue",snapshot.val());
+});
+
+
 //create email method
 function createEmail(){
   let email=document.querySelector('#email').value;
@@ -134,6 +142,10 @@ function signOut(){
 function getUserName(){
   return firebase.auth().currentUser.displayName;
 }
+
+
+
+
 // Saves a new message to your Cloud Firestore database.
 function saveMessage() {
   var messageText=document.querySelector('#messages').value;
@@ -217,9 +229,3 @@ snd.addEventListener('keyup',function pressEnter(event){
     event.preventDefault();
   }
   });
-
-
-
-
-
-

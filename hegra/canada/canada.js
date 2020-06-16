@@ -364,18 +364,20 @@ function openNav() {
                     if(sit()==1){partsum=0}
                     return partsum;
                 }
+            let lastDraw=window.localStorage.getItem("drawvalue");
             //this button used to show the sum of radio values
             calculate.onclick=function myscore(){
+                //here i get the value of draw from window.localstorage
                 mysum=/*here i started to sum*/  checkboxvalue(addpts)+partnersum()+certificatetrade()+eduwithexper()+year()+edu()+exper()+(lang1(reading)+lang1(speaking)+lang1(listening)+lang1(writing))+lang2sum(lang2(reading1),lang2(listening1),lang2(writing1),lang2(speaking1))+eduwithlang();
                 if(isNaN(mysum)){
                    score.textContent="please mark on all answers to get your score";
                    }else{
-                       if(mysum >= '440'){
+                       if(mysum >= lastDraw){
                         score.style.color="green";
                 score.textContent="Success :) Dear Candidate your Score is: "+mysum;
-                       }else if(mysum < '440'){
+                       }else if(mysum < lastDraw){
                            score.style.color="red";
-                        score.textContent="failed :( Dear Candidate your Score less than Minimum : "+mysum;
+                        score.textContent="failed :( Dear Candidate your Score less than Minimum, it's: "+mysum;
                        }
                    }
             }
