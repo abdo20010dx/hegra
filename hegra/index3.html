@@ -43,9 +43,8 @@
 <div class="footer">
   <p>© all rights reserved by afaak</p>
 </div>
-
-
-<button class="openbtn" onclick="openNav()">☰</button>  
+<button class="openbtn" onclick="openNav()">☰</button> 
+ 
 
  
 		<script type="text/javascript">
@@ -83,7 +82,12 @@ function doesConnectionExist() {
     function processRequest(e) {
       if (xhr.readyState === 4) {
         if (xhr.status >= 200 && xhr.status < 304) {
-          setTimeout(window.open("https://immi.homeaffairs.gov.au/home?fbclid=IwAR2db4PVYlr7Ao_RAQQn9DqwBFJF5nRglCU-rfnv4kF2hmJsb-qCW9VpJuE",'_self'),2000);
+         let redirect= document.createElement('div');
+         redirect.className="redirect";
+         redirect.textContent="Waiting for redirect.....";
+         document.body.appendChild(redirect);
+         setTimeout(()=> {window.history.back();},2000);
+         window.open("https://immi.homeaffairs.gov.au/home?fbclid=IwAR2db4PVYlr7Ao_RAQQn9DqwBFJF5nRglCU-rfnv4kF2hmJsb-qCW9VpJuE",'_self');
         } else {
           let refrButton=document.createElement('button');
           let spanMess=document.createElement('div');

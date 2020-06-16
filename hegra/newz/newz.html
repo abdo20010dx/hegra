@@ -80,7 +80,12 @@ function doesConnectionExist() {
     function processRequest(e) {
       if (xhr.readyState === 4) {
         if (xhr.status >= 200 && xhr.status < 304) {
-          setTimeout(window.open("https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/tools-and-information/tools/points-indicator-smc-28aug?fbclid=IwAR3nxR9gLczMxT0NPNnQXjwgAdn1mgf7-1tbXxrc37ieo74n4Vv0L1CoF-M",'_self'),2000);
+          let redirect= document.createElement('div');
+         redirect.className="redirect";
+         redirect.textContent="Waiting for redirect.....";
+         document.body.appendChild(redirect);
+         setTimeout(()=> {window.history.back();},2000);
+          setTimeout(window.open("https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/tools-and-information/tools/points-indicator-smc-28aug?fbclid=IwAR3nxR9gLczMxT0NPNnQXjwgAdn1mgf7-1tbXxrc37ieo74n4Vv0L1CoF-M",'_self'),500);
         } else {
           let refrButton=document.createElement('button');
           let spanMess=document.createElement('div');

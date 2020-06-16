@@ -402,10 +402,17 @@ input[type="radio"]:checked + label {
 
     }
     .NoConnectMessage{
-        /*message will not appear in crs australia and canada home page because there iframe*/
+        /*maybe message will not appear in crs australia and canada home page because there iframe*/
         margin-top: 30%;
         display: block;
         text-align: center;
         color: red;
+        font-size: 30px;
+    }
+    .redirect{
+        padding: 30px;
+        background-color: rgb(230, 220, 220);
+        border-radius: 50%;
+        margin-top: 50%;
         font-size: 30px;
     }
