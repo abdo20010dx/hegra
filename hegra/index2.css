@@ -18,13 +18,15 @@ label{
     font-size: large;
 }
 form{
+    font-family: sans-serif;
     position: absolute  ;
     text-align: center;
-    left: 8%;
-    top:3%;
-    width: 80%;
-    height: 90%;
-    background-color: burlywood;
+    left: 30%;
+    top:25%;
+    width: 40%;
+    height: 50%;
+    background-color: rgb(34, 114, 151);
+    border-radius: 70%;
 }
 div{
     margin: 0px;
